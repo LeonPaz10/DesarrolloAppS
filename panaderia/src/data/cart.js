@@ -5,8 +5,8 @@ export const CART = [
       name: "Pan Baguette",
       description: "Clasico pan frances",
       weight: "350gr",
-      price: 16,
-      quantity: 3,
+      price: 15,
+      quantity: 2,
     },
     {
       id: "4",
@@ -14,7 +14,7 @@ export const CART = [
       name: "Pan de Molde Integral",
       description: "Pidelo entero o tajado, con o sin semillas",
       weight: "900gr",
-      price: 33,
+      price: 15,
       quantity: 2,
     },
   ];
