@@ -6,7 +6,6 @@ import { useSelector, useDispatch, connect } from "react-redux";
 import { selectedCategory } from "../store/actions/category.action";
 
 const CategoriesScreen = ({ navigation }) => {
-
   const categories = useSelector((state) => state.categories.categories);
   const dispatch = useDispatch();
 
