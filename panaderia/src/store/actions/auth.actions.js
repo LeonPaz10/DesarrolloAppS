@@ -19,7 +19,7 @@ export const signUp = (email, password) => {
       });
 
       const resData = await response.json();
-      console.log(resData);
+      console.log(resData);s
       dispatch({
         type: SIGNUP,
         token: resData.idToken,

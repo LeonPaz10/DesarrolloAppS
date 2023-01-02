@@ -1,8 +1,8 @@
-import { CATEGORIES } from "../../data/categories";
+import { Categories } from "../../data/Categories";
 import { SELECTED_CATEGORY } from "../actions/category.action";
 
 const initialState = {
-  categories: CATEGORIES,
+  categories: Categories,
   selected: null,
 };
 

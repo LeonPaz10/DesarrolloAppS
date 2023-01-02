@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import OrdersScreen from "../screens/OrdersScreen";
 
-import { COLORS } from "../constants/colors";
+import { COLORS } from "../constants/COLORS";
 
 const Stack = createNativeStackNavigator();
 

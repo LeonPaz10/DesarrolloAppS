@@ -1,24 +1,20 @@
-
-import {useFonts} from "expo-font"
-import BottomTabNavigator from "./src/navigation/BottomTabNavigator";
+import { useFonts } from "expo-font";
+import MainNavigator from "./src/navigation";
 import { Provider } from "react-redux";
 import store from "./src/store";
 
 export default function App() {
-  const[fontsLoaded]=useFonts({
-    roboto : require("./src/assets/fonts/RobotoMono-VariableFont_wght.ttf")
+  const [fontsLoaded] = useFonts({
+    roboto : require("./src/assets/fonts/RobotoMono-VariableFont_wght.ttf"),
   });
 
-  if(!fontsLoaded){
+  if (!fontsLoaded) {
     return null;
-  };
+  }
 
   return (
     <Provider store={store}>
-      <BottomTabNavigator />
+      <MainNavigator />
     </Provider>
   );
- 
 }
-
-

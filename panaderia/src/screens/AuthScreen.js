@@ -8,10 +8,10 @@ import {
   } from "react-native";
   import React, { useCallback, useReducer, useEffect } from "react";
   
-  import { COLORS } from "../constants/colors";
+  import { COLORS } from "../constants/COLORS";
   import { useDispatch } from "react-redux";
   import { useState } from "react";
-  import { signup } from "../store/actions/auth.actions";
+  import { signUp } from "../store/actions/auth.actions";
   import Input from "../components/Input";
   
   const FORM_INPUT_UPDATE = "FORM_INPUT_UPDATE";
@@ -62,7 +62,7 @@ import {
     });
   
     const handleSignUp = () => {
-      dispatch(signup(email, password));
+      dispatch(signUp(email, password));
     };
   
     const onInputChangeHandler = useCallback(
@@ -102,8 +102,8 @@ import {
               style={styles.input}
               id="password"
               label="Clave"
-              placeholder="hola"
-              keyboardType="default"
+              placeholder="contraseña"
+              keyboardType="default"    
               secureTextEntry
               required
               minLength={6}
@@ -117,7 +117,7 @@ import {
             <View style={styles.button}>
               <Button
                 //title={isSingUp ? "REGISTRARME" : "LOGIN"}
-                title="Test"
+                title="Registrarme"
                 color={COLORS.primaryColor}
                 onPress={handleSignUp}
               />

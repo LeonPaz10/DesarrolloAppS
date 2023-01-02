@@ -1,5 +1,5 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { COLORS } from "../constants/colors";
+import { COLORS } from "../constants/COLORS";
 import AuthScreen from "../screens/AuthScreen";
 
 const Stack = createNativeStackNavigator();

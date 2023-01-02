@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { FlatList } from "react-native";
 import BreadItem from "../components/BreadItem";
-import { BREADS } from "../data/bread";
+import { Breads } from "../data/Bread";
 
 import { useSelector, useDispatch, connect } from "react-redux";
 import { filteredBread, selectBread } from "../store/actions/bread.action";

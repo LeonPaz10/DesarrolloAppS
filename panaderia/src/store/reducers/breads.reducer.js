@@ -1,8 +1,8 @@
-import { BREADS } from "../../data/bread";
+import { Breads } from "../../data/Bread";
 import { SELECTED_BREAD, FILTERED_BREAD } from "../actions/bread.action";
 
 const initialState = {
-  breads: BREADS,
+  breads: Breads,
   filteredBread: [],
   selected: null,
 };
